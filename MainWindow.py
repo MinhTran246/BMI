@@ -108,3 +108,13 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Comment:</p></body></html>"))
         self.pushButtonCalculate.setText(_translate("MainWindow", "Calculate"))
         self.pushButtonClose.setText(_translate("MainWindow", "Close"))
+        from PyQt6.QtWidgets import QApplication, QMainWindow
+
+from CHAP7.LearnQPushButton.UI.MainwindowExt import MainwindowExt
+
+app=QApplication([])
+mainwindow=QMainWindow()
+myui=MainwindowExt()
+myui.setupUi(mainwindow)
+myui.showWindow()
+app.exec()
